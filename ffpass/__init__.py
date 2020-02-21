@@ -155,7 +155,7 @@ def encodeLoginData(key, data):
 
 
 def getJsonLogins(directory):
-    with open(directory / "logins.json", "r") as loginf:
+    with open(directory / "logins.json", "r", encoding="utf-8") as loginf:
         jsonLogins = json.load(loginf)
     return jsonLogins
 
